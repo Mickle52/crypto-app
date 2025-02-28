@@ -9,6 +9,7 @@ const contentStyle: React.CSSProperties = {
   color: "#fff",
   backgroundColor: "#2a2a2a",
   padding: "1rem",
+  paddingTop: "2rem",
 };
 
 export default function AppContent() {
@@ -21,7 +22,10 @@ export default function AppContent() {
 
   return (
     <Layout.Content style={contentStyle}>
-      <Typography.Title level={3} style={{ textAlign: "left", color: "#fff" }}>
+      <Typography.Title
+        level={3}
+        style={{ textAlign: "center", color: "#fff" }}
+      >
         Portfolio:
         {assets
           ?.map((asset) => {

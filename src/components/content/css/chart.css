@@ -1,0 +1,8 @@
+.chart-pie {
+  height: 400px;
+}
+@media (max-width: 445px) {
+  .chart-pie {
+    height: 300px;
+  }
+}

@@ -1,0 +1,19 @@
+@media (max-width: 1024px) {
+  .sider-card {
+    .ant-card-body {
+      padding: 24px;
+    }
+  }
+  .statistic {
+    .ant-statistic-content {
+      font-size: 20px;
+      width: 120%;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .assets-changes-btn {
+    width: 100px;
+  }
+}

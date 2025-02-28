@@ -2,6 +2,7 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Pie } from "react-chartjs-2";
 import { useCrypto } from "../../context/crypto-context.tsx";
 import { FC } from "react";
+import "./css/chart.css";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -32,8 +33,8 @@ const PorfolioChart: FC = () => {
         display: "flex",
         justifyContent: "center",
         marginBottom: "1rem",
-        height: 400,
       }}
+      className="chart-pie"
     >
       <Pie data={data}></Pie>
     </div>

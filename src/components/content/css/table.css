@@ -1,0 +1,9 @@
+/*.ant-table-content {*/
+/*  font-size: 10px;*/
+/*}*/
+
+@media (max-width: 445px) {
+  .ant-table-content {
+    font-size: 10px;
+  }
+}

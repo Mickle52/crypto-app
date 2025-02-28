@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import CoinInfoModal from "./CoinInfoModal.tsx";
 import { ICrypto } from "../../types/types.tsx";
 import AddAssetForm from "./AddAssetForm.tsx";
+import "./AppHeader.css";
 
 const headerStyle: React.CSSProperties = {
   width: "100%",
@@ -43,11 +44,11 @@ export default function AppHeader() {
   return (
     <Layout.Header style={headerStyle}>
       <Select
+        className="header-selector"
         onSelect={handleSelect}
         open={select}
         onClick={() => setSelect((prev) => !prev)}
-        style={{ width: 250 }}
-        value="press / to open"
+        value="Current price changes"
         options={crypto?.map((coin: ICrypto) => ({
           label: coin.name,
           value: coin.id,

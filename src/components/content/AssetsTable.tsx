@@ -2,6 +2,7 @@ import { Table } from "antd";
 import type { TableColumnsType } from "antd";
 import React, { FC } from "react";
 import { useCrypto } from "../../context/crypto-context.tsx";
+import "./css/table.css";
 
 interface DataType {
   key: React.Key;
@@ -76,6 +77,7 @@ const AssetsTable: FC = () => {
     <Table<DataType>
       pagination={false}
       columns={columns}
+      className="test-table"
       // @ts-expect-error 'Проблема с внутренним апи таблицы'
       dataSource={dataAssets}
       showSorterTooltip={{ target: "sorter-icon" }}

@@ -1,0 +1,9 @@
+.header-selector {
+  width: 250px;
+}
+
+@media (max-width: 768px) {
+  .header-selector {
+    width: 200px;
+  }
+}
